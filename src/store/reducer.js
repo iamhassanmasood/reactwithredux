@@ -23,6 +23,11 @@ let reducer = (state = initialState, actions) => {
         }
 
     }
+    if(actions.type === "RESET"){
+        return {
+            counter: 0
+        }
+    }
     return state;
 }
 

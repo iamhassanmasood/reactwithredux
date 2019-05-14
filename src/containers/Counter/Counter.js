@@ -6,7 +6,6 @@ import {connect} from 'react-redux'
 class Counter extends Component {
 
   render () {
-
         return (
             <div>
                 <CounterOutput value={this.props.ctr} />
@@ -22,6 +21,9 @@ class Counter extends Component {
                 <CounterControl 
                 label="Subtract 5" 
                 clicked={this.props.onFiveDecrementCounter}  />
+                <CounterControl 
+                label="Reset" 
+                clicked={this.props.onResetCounter} />
             </div>
         );
     }
@@ -38,7 +40,8 @@ const mapDispatchToProps = dispatch =>{
         onIncrementCounter : () => dispatch ({ type: "INCREMENT_COUNTER"}),
         onDecrementCounter : () => dispatch ({ type: "DECREMENT_COUNTER"}),
         onFiveIncrementCounter : () => dispatch ({ type: "5INCREMENT_COUNTER"}),
-        onFiveDecrementCounter : () => dispatch ({ type: "5DECREMENT_COUNTER", value: 5})
+        onFiveDecrementCounter : () => dispatch ({ type: "5DECREMENT_COUNTER", value: 5}),
+        onResetCounter:()=> dispatch({type: 'RESET'})
     }
 }
 

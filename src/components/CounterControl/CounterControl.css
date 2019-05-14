@@ -4,7 +4,6 @@
     box-sizing: border-box;
     margin: 16px;
     border: 1px solid #eee;
-    box-shadow: 0 2px 2px #ccc;
     font-weight: bold;
     text-align: center;
     cursor: pointer;
@@ -13,5 +12,8 @@
 
 .CounterControl:hover,
 .CounterControl:active {
-    background-color: #eee;
+    background-color: rgb(51, 5, 5);
+    box-shadow: 0 2px 2px rgb(187, 9, 9);
+    border: 2px solid rgb(224, 67, 67);
+    color: #eee;
 }

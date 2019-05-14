@@ -9,4 +9,3 @@ const counterControl = (props) => (
 );
 
 export default counterControl;
-
