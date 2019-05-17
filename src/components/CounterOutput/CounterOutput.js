@@ -4,7 +4,7 @@ import './CounterOutput.css';
 const counterOutput =(props)=> {
     const classes = [];
     const value = props.value;
-    if(value % 4 === 0)  {
+    if(value % 2 === 0)  {
       classes.push('COutput') 
     } else classes.push('CounterOutput')
     return (
